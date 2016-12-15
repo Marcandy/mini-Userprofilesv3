@@ -9,7 +9,8 @@ angular.module('userProfiles').service('mainService', function($http, $q) {
     }).then(function (response) {
       var parsedResponse = response.data.data;
       for (var i = 0; i < parsedResponse.length; i++) {
-        parsedResponse[i].first_name = 'Ralf';
+        parsedResponse[i].first_name = 'Marc-Andy';
+        parsedResponse[i].last_name = 'The Great';
       }
       deferred.resolve(parsedResponse);
     })
